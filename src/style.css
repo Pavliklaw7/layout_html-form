@@ -24,7 +24,7 @@ input[type="color"] {
   margin-top: 3px;
 }
 
-label[for="whatCar"] {
+label[for="what__car"] {
   position: relative;
   bottom: 10px;
 }
