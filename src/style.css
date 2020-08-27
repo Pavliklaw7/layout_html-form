@@ -1,6 +1,10 @@
-input,
-select {
+label {
+  display: block;
   margin-bottom: 10px;
+}
+
+label:last-child {
+  margin-bottom: 0;
 }
 
 fieldset {
@@ -8,15 +12,22 @@ fieldset {
 }
 
 p {
+  margin-top: 0;
+  margin-bottom: 8px;
+  display: inline-block;
+}
+
+.radio__btn,
+.radio__btn > label {
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+select {
   display: inline;
 }
 
-fieldset > input:last-child,
-select:last-child {
-  margin-bottom: 3px;
-}
-
-fieldset:nth-child(2) > input:last-child {
+fieldset > label:last-child {
   margin-bottom: 0;
 }
 
@@ -25,13 +36,5 @@ input[type="color"] {
 }
 
 label[for="what__car"] {
-  position: relative;
-  bottom: 10px;
-}
-
-label[for="recommend"],
-select[name="recommend"] {
-  position: relative;
-  top: 10px;
-  margin-bottom: 10px;
+  display: inline-block;
 }
