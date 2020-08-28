@@ -10,156 +10,175 @@
   </head>
   <body>
     <form
-    action="https://mate-academy-form-lesson.herokuapp.com/create-application"
-    method="POST"
-    onsubmit="onSubmit()">
-      <fieldset>
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="POST"
+      onsubmit="onSubmit()">
+      <fieldset class="fieldset">
         <legend>Personal information</legend>
-        <label for="surname">
+        <label class="label" for="surname">
           Surname:
           <input
-          type="text"
-          id="surname"
-          name="surname"
-          required
-          inlength="3"
+            class="input"
+            type="text"
+            id="surname"
+            name="surname"
+            required
+            inlength="3"
           >
         </label>
-        <label for="name">
+        <label class="label" for="name">
           Name:
           <input
-          type="text"
-          id="name"
-          name="name"
-          required
-          maxlength="20"
+            class="input"
+            type="text"
+            id="name"
+            name="name"
+            required
+            maxlength="20"
           >
         </label>
-        <label for="age">
+        <label class="label" for="age">
           How old are You?
           <input
-          type="number"
-          id="age"
-          name="age"
-          value="12"
-          required
-          min="0"
-          max="100"
+            class="input"
+            type="number"
+            id="age"
+            name="age"
+            value="12"
+            required
+            min="0"
+            max="100"
           >
         </label>
-        <label for="date">
+        <label class="label" for="date">
           Full date of birth:
           <input
-          type="date"
-          name="date"
-          id="date"
-          min="0000-00-00"
+            class="input"
+            type="date"
+            name="date"
+            id="date"
+            min="0000-00-00"
           >
         </label>
-        <label for="accept">
+        <label class="label" for="accept">
           I accept the term of the agreement
           <input
-          type="checkbox"
-          name="accept"
-          id="accept"
+            class="input"
+            type="checkbox"
+            name="accept"
+            id="accept"
           >
         </label>
       </fieldset>
-      <fieldset>
+      <fieldset class="fieldset">
         <legend>Registration</legend>
-        <label for="email">
+        <label class="label" for="email">
           E-mail:
           <input
-          type="email"
-          placeholder="email@example.com"
-          name="email"
-          id="email"
-          multiple
+            class="input"
+            type="email"
+            placeholder="email@example.com"
+            name="email"
+            id="email"
+            multiple
           >
         </label>
-        <label for="password">
+        <label class="label" for="password">
           Password:
           <input
-          type="password"
-          name="password"
-          id="password"
+            class="input"
+            type="password"
+            name="password"
+            id="password"
           >
         </label>
       </fieldset>
-      <fieldset>
+      <fieldset class="fieldset">
         <legend>An interesting fact about you!</legend>
-        <p>Do you love cats?</p>
+        <p class="radio__title">Do you love cats?</p>
         <div class="radio__btn">
-          <label for="radio_button_yes">
+          <label class="label" for="radio_button_yes">
             <input
-            type="radio"
-            name="radio_button_yes"
-            id="radio_button_yes"
-            value="yes"
+              class="input"
+              type="radio"
+              name="radio_button_yes"
+              id="radio_button_yes"
+              value="yes"
             >
             Yes
           </label>
-          <label for="radio__button_no">
+          <label class="label" for="radio__button_no">
             <input
-            type="radio"
-            name="radio__button_no"
-            id="radio__button_no"
-            value="no"
+              class="input"
+              type="radio"
+              name="radio__button_no"
+              id="radio__button_no"
+              value="no"
             >
             No
           </label>
         </div>
-        <label for="color">
+        <label class="label" for="color">
           What is your favorite color?
           <input
-          type="color"
-          name="color"
-          id="color"
+            class="input"
+            type="color"
+            name="color"
+            id="color"
           >
         </label>
-        <label for="time__to__bed">
+        <label class="label" for="time__to__bed">
           What time do you go to bed?
           <input
-          type="time"
-          name="time__to__bed"
-          id="time__to__bed"
-          step="1"
+            class="input"
+            type="time"
+            name="time__to__bed"
+            id="time__to__bed"
+            step="1"
           >
         </label>
-        <label for="what__car">
+        <label class="label" for="what__car">
           What are your favorite brand of cars?
-          <select
-          size="4"
-          name="what__car"
-          id="what__car">
+          <select class="select"
+            size="4"
+            name="what__car"
+            id="what__car">
             <option value="BMW">BMW</option>
             <option value="Audi">Audi</option>
             <option value="Lada">Lada</option>
           </select>
         </label>
-        <label for="range">
+        <label class="label" for="range">
           How do you rate our work?
           <input
-          type="range"
-          name="range"
-          id="range"
-          min="0"
-          max="100"
-          value="0"
+            type="range"
+            name="range"
+            id="range"
+            min="0"
+            max="100"
+            value="0"
           >
         </label>
       </fieldset>
-      <fieldset>
+      <fieldset class="fieldset">
         <legend>Additional info:</legend>
-        <label for="comments">
+        <label class="label" for="comments">
           Comments:
-          <textarea name="comments" id="comments"></textarea>
+          <textarea
+            name="comments"
+            id="comments"
+            autocomplete="off"
+            >
+          </textarea>
         </label>
-        <label for="recommend" type="recommend">
+        <label
+          class="label"
+          for="recommend"
+          type="recommend">
           Would you recommend us?
-          <select
-          name="recommend"
-          id="recommend">
+          <select class="select"
+            name="recommend"
+            id="recommend">
             <option value="yes">yes</option>
             <option value="no">no</option>
           </select>
